@@ -4,19 +4,26 @@
   <meta charset="UTF-8">
   <title>Ultimate Mini Games 🎮</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <h2>Loading Games Hub...</h2>
+    <div class="loader"></div>
+  </div>
+
   <h1>🎉 Ultimate Mini Games Hub 🎉</h1>
 
-  <!-- Menu -->
+  <!-- Animated Menu -->
   <div id="menu">
-    <button onclick="showGame('tic-tac-toe')">Tic-Tac-Toe</button>
-    <button onclick="showGame('rps')">Rock-Paper-Scissors</button>
-    <button onclick="showGame('guess-number')">Number Guessing</button>
-    <button onclick="showGame('car-bike')">Car/Bike Game</button>
-    <button onclick="showGame('snake')">Snake</button>
-    <button onclick="showGame('memory')">Memory Cards</button>
-    <button onclick="showGame('clicker')">Clicker Game</button>
+    <button onclick="showGame('tic-tac-toe')"><i class="fas fa-times"></i> Tic-Tac-Toe</button>
+    <button onclick="showGame('rps')"><i class="fas fa-hand-rock"></i> RPS</button>
+    <button onclick="showGame('guess-number')"><i class="fas fa-hashtag"></i> Guess Number</button>
+    <button onclick="showGame('car-bike')"><i class="fas fa-car"></i> Car/Bike</button>
+    <button onclick="showGame('snake')"><i class="fas fa-snake"></i> Snake</button>
+    <button onclick="showGame('memory')"><i class="fas fa-brain"></i> Memory</button>
+    <button onclick="showGame('clicker')"><i class="fas fa-mouse-pointer"></i> Clicker</button>
   </div>
 
   <div id="games">
@@ -83,3 +90,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
