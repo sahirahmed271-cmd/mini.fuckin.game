@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultimate Mini Games 🎮</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎉 Ultimate Mini Games Hub 🎉</h1>
+
+  <!-- Menu -->
+  <div id="menu">
+    <button onclick="showGame('tic-tac-toe')">Tic-Tac-Toe</button>
+    <button onclick="showGame('rps')">Rock-Paper-Scissors</button>
+    <button onclick="showGame('guess-number')">Number Guessing</button>
+    <button onclick="showGame('car-bike')">Car/Bike Game</button>
+    <button onclick="showGame('snake')">Snake</button>
+    <button onclick="showGame('memory')">Memory Cards</button>
+    <button onclick="showGame('clicker')">Clicker Game</button>
+  </div>
+
+  <div id="games">
+
+    <!-- Tic-Tac-Toe -->
+    <div class="game" id="tic-tac-toe">
+      <h2>Tic-Tac-Toe</h2>
+      <div id="ttt-board" class="board"></div>
+      <button onclick="tttRestart()">Restart</button>
+      <p id="ttt-status"></p>
+    </div>
+
+    <!-- Rock-Paper-Scissors -->
+    <div class="game" id="rps">
+      <h2>Rock-Paper-Scissors</h2>
+      <button onclick="rpsPlay('rock')">Rock</button>
+      <button onclick="rpsPlay('paper')">Paper</button>
+      <button onclick="rpsPlay('scissors')">Scissors</button>
+      <p id="rps-result"></p>
+    </div>
+
+    <!-- Number Guessing -->
+    <div class="game" id="guess-number">
+      <h2>Number Guessing Game (1-10)</h2>
+      <input type="number" id="guess-input" min="1" max="10" placeholder="Enter 1-10">
+      <button onclick="checkGuess()">Guess</button>
+      <p id="guess-result"></p>
+    </div>
+
+    <!-- Car/Bike Game -->
+    <div class="game" id="car-bike">
+      <h2>🚗 Car/Bike Game</h2>
+      <canvas id="raceCanvas" width="400" height="600"></canvas>
+      <p id="race-score">Score: 0</p>
+      <button onclick="restartRace()">Restart</button>
+    </div>
+
+    <!-- Snake Game -->
+    <div class="game" id="snake">
+      <h2>🐍 Snake Game</h2>
+      <canvas id="snakeCanvas" width="400" height="400"></canvas>
+      <p id="snake-score">Score: 0</p>
+      <button onclick="restartSnake()">Restart</button>
+    </div>
+
+    <!-- Memory Card Game -->
+    <div class="game" id="memory">
+      <h2>🧠 Memory Game</h2>
+      <div id="memory-board" class="memory-board"></div>
+      <p id="memory-result"></p>
+      <button onclick="restartMemory()">Restart</button>
+    </div>
+
+    <!-- Clicker Game -->
+    <div class="game" id="clicker">
+      <h2>🎯 Clicker Game</h2>
+      <button id="clicker-btn">Click Me!</button>
+      <p>Score: <span id="clicker-score">0</span></p>
+      <button onclick="restartClicker()">Restart</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

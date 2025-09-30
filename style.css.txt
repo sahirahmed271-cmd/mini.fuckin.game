@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 { color: #d6336c; }
+
+#menu { margin: 20px; }
+#menu button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #d6336c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.game {
+  display: none;
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  background: #d6336c;
+  color: white;
+  cursor: pointer;
+}
+
+.board { display: grid; grid-template-columns: repeat(3, 100px); gap: 5px; margin: 20px auto; width: 320px; }
+.cell { width: 100px; height: 100px; display: flex; justify-content: center; align-items: center; font-size: 36px; border: 2px solid #d6336c; cursor: pointer; }
+
+canvas { background: #e3e3e3; display: block; margin: 0 auto; }
+.memory-board { display: grid; grid-template-columns: repeat(4, 80px); gap: 10px; justify-content: center; }
+.memory-card { width: 80px; height: 80px; background: #d6336c; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; }
